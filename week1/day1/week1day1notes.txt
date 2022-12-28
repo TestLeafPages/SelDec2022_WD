@@ -1,0 +1,109 @@
+Todays Agenda!!
+================
+   9:30-10:30-Java and Automation Introduction
+   10:30-11:00-Project,package,Class
+   11:00-11:30-Breakout
+   11:30-12:15-methods,Object
+   12:15-12:30-Breakout
+   12:30-12:40-Recap
+What is Automation and Why Automation?
+   Automation can help you to reduce the manual efforts which is mechanically repeatimg
+   It can save lot of time
+
+Why Java and What is Java?
+   Automation script can be written in any of the languages
+   Java is the predominantly used language because of its libraries(Open source) 
+
+   Java is a programming language
+   Java is Object Oriented language
+   Java is platform independent
+
+   Components of Java Architecture:
+   ==============================
+      JDK
+        Java Development kit
+      JRE
+        Java RunTime Environment
+      JVM
+        Java Virtual Machine
+
+IDE:
+  Integrated Development Environment    
+  Eclipse
+    It is an editor which will help you to write your code and run your code
+
+How to create a project?
+   -Click File-New-Project
+   -Maven Project-Maven->Next-Click SimpleProject checkbox-Next-groupId-Artifact id-Finish  
+
+What is a package?
+    -It is a folder to organize all your codes
+
+Rule book(Naming Convention):
+   Package name should start with lowerCase
+
+Class:
+   Class is a template,bluprint,testcase
+   Technically Class is a java File
+    Inside a Class 
+      Constructor
+      methods
+      variables
+      
+Naming Convention :
+    Class name should start with UpperCase
+
+
+    To run java code 
+      -Right Click-Run as-Java Application
+      Press the run button in the menu bar
+      keyboard shortcut-ctrl+f11
+
+
+Classroom:
+==========
+  Create a new Project
+  Create a new package(week1.day1)
+  Create a new Class(FirstCode)
+  Create a main method inside the class(Using shortcut)
+  Write a print statement inside the main method
+  Run and Confirm the print statement in the console
+methods:
+=======
+  It is a function inside a class
+  It is a smaller line of code that does some specific operations
+
+Naming Convention:
+  -method name should start with lowerCase and the rest of the words should start with UpperCase
+  -No white spaces
+  -It should not start with any special characters
+  -method name should be meaningful
+
+  Example:
+    driveCar
+
+Method signature:
+===============
+   1)Access modifier
+   2)return type
+   3)methodname
+   4)input arguments    
+
+Object:
+========
+  It is the reference for a class
+Syntax to create an object:
+  Classname objectName = new Classname();
+
+Classroom:
+=========
+  Create a class(Mobile)
+  Create two methods
+    -sendSMS()
+      write a print statement inside this method  
+    -takeSnap()
+      write a print statement inside this method
+  Create a main method 
+  Inside main method create an object for Mobile class and call the methods
+  Run and confirm the print statement in the console
+  
