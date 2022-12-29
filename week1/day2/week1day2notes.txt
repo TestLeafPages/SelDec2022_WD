@@ -1,0 +1,124 @@
+Todays Agenda:
+=============
+    1)9:30-10:30-Operators,method Signature
+    2)10:30-11:00-Classroom
+    3)11:00-12:00-Conditional Statements,Jump statement
+    4)12:00-12:15-Classroom
+    5)12:15-12:30-Program
+    6)12:30-12:40-Recap
+
+    
+
+  Operators:
+  ===========
+  Arithemetic Operators:
+  ======================
+     +,-,*,/,%
+
+     to add numbers - "+"
+     to subtract    - "-"
+     to multiply    - "*"
+     to divide   
+      Example
+        10 / 5
+         quotient  - 2 
+        10 % 5
+         remainder - 0 
+      Example
+        10 % 3   
+          remainder - 1
+        9 % 3
+          remainder - 0
+
+  Relational Operators:
+  ====================
+     < , > , <= , >= , != , == 
+
+  Assignment Operator:
+  ====================
+           =
+     
+  Logical Operators:
+  =================
+     && AND
+     || OR
+
+
+    AND                        OR
+     
+     true true   - true        true true   - true
+     true false  - false       true false  - true
+     false true  - false       false true  - true
+     false false - false       false false - false
+
+     Method Signature:
+     =================
+       1)Access modifier
+       2)return type
+       3)method name
+       4)Input arguments
+
+      1)Access modifier:
+      ==================
+        There are 4 types of access modifier
+
+         public
+          - Anyone can access
+          - It can be accessed by any of the classes within the package and outside the package
+          - To access the public methods from another package - import 
+
+         private
+           - Only you can access
+           - It can be accessed only within the same class
+
+         protected
+
+         default  
+            -It can be accessed by any of the classes within the same package
+            -It cannot be accessed by any of the classes outside the package
+             
+
+         Classroom:
+         ===========
+           Create a class (Calculator)
+           Create methods 
+             -addThreeNumbers
+               pass three input arguments
+               return sum
+             -multiply
+               pass two int arguments
+               return mul
+              -void divide
+                Declare two numbers
+                write a logic to divide two number and print    
+           Create a  main method and call all the methods
+           Run and Confirm 
+Conditional Statements:
+=====================
+   if
+   else if
+   else
+
+Control Statements:
+==================
+ 1%2==1
+ 2%2==0
+ 3%2==1
+ 4%2==0
+ 5%2==1
+
+ Classroom:
+ =========
+   Print even numbers from 1 to 20
+   Steps:
+   Declare a for loop
+   Check for the Condition
+   print the even numbers
+   Run and confirm
+
+Jump Statements:
+==================
+  break;
+   stop the loop execution and go out of the loop
+  continue;
+   stop the current iteration and move to the next iteration
