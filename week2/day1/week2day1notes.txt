@@ -1,0 +1,156 @@
+Todays Agenda:
+=============
+  9:30-10:30->Selenium Introduction
+  10:30-11:00->Classroom
+  11:00-12:00->Basic Locators
+  12:00-12:15->Classroom
+  12:15-12:30->Locators
+  12:30-12:40->Recap
+
+
+  Selenium WebDriver:
+  ==================
+     -It is a automation tool to interact with all web-based applications
+     ex:Facebook,google,amazon......
+
+  History:
+  =======
+     -Json Huggins-invented Selenium to kill Mercury
+     -Simon steward-created a project-WedDriver->Selenium-1 version->not very successfull
+     -He merged WebDriver+Selenium->Selenium WebDriver->Selenium-2 version->successfull 
+     
+  Selenium can do
+     -Browsers
+         Chrome,Edge,FireFox,IE,Safari
+     -OS    
+         windows,mac,linux,IOs,Android
+     -It can be used in different languages
+         -Java,Python,Ruby,C#,JS
+
+  Selenium Cannot do? 
+     ->It cannot talk with Desktop application
+     ->It cannot talk with an Excel sheet->Apache Poi libraray
+     ->It cannot talk with Mobile Application->Appium
+     ->It cannot talk to a database application->JDBC libraray
+
+What are the others tools in Automation?
+   -Puppeter
+   -WebDriver IO
+   -Cypress
+   -Appium
+   -PlayWright
+
+
+Why Selenium?
+    ->Selenium is the only open source tool which is used by billions of users
+
+pom.xml:
+=======
+   It is a maven repo to download all the jar files
+   It is to maintain the dependencies
+
+Dependencies:
+=============
+   Dependencies are softwares,where we need to write code
+   Dependencies ->Maven repository
+
+ Selenium-java
+     Is to interact with the browser
+
+                  ChromeDriver
+ Selenium script-------------->broswer(Chrome)        
+                   EdgeDriver
+                ---------------->Edge
+
+
+Selenium manager:
+================
+      It will download the driver(.exe) in your local system
+    1)Selenium java
+    2)Driver
+    3)Browser
+
+    Classroom:
+    =========
+       Create a new Class(LaunchEdgeBroswer)
+        Launch EdgeBrowser 
+          EdgeDriver driver = new EdgeDriver();
+       Run and Confirm   
+
+   steps:
+   =======
+     1)Launch the browser(Chrome)
+     2)Load the url(http://leaftaps.com/opentaps/control/main)
+     3)Login Page
+         -Enter the Username
+         -Enter the Password
+         -Click the Login
+
+3 ways to inspect:
+=================
+   Right Click ->Inspect
+   Press F12
+   Click spy tool 
+
+
+   Locators:
+   ========
+      Is used to locate the webelements in a webpage
+      ->Right click and Click Inspect
+      ->Document Object Model(DOM) will be opened in the bottom
+      ->Find the tagName (purple)
+         ->Orange fields->
+         
+         ->Blue->Attribute values  
+
+
+ To find the element
+    findElement()
+ To type in the textfield
+    sendKeys();           
+
+8 Locators:
+==========
+
+     ->id
+        Most preffered Locators
+        It is unique
+        Id has combination of numbers then id should not be preffered
+
+     ->name
+         If id is not present
+
+     ->className
+         ->If Classname contains spaces in between ,Classname is not preffered
+     ->linkText
+          ->To locate any link
+     ->tagName
+          ->To locate the collection of objects
+     ->Xpath
+         ->If none of the above locators is not present
+     ->CSSSelector
+
+   Classroom:
+   =========
+     Load facebook.com(https://www.facebook.com/)
+     enter  email
+     enter Password
+     Click Login button
+     Verify the title(getTitle)
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
