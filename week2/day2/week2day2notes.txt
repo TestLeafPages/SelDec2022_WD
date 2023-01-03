@@ -1,0 +1,109 @@
+Todays Agenda:
+=============
+  9:30-10:00->locators
+  10:00-10:30->Select class
+  10:30-11:00->Classroom
+  11:00-12:00->Basic Xpath
+  12:00-12:20->Classroom
+  12:20-12:30->Recap
+
+
+  return type of findElement() is WebElement
+
+  NoSuchElementException:
+  ======================
+      If the element is not present in the DOM 
+
+  WebDriver Methods:
+  =================
+     getTitle()
+       It is to get the title of the current window/webpage
+       return Type->String
+     getText()
+        It is to get the text of the element  
+        returnType->String
+
+   linkText()
+   partialLinkText()->To find the partial match of a linkText            
+
+   Classroom:
+   =========
+     1)Login to Leaftaps application
+     2)Click crmsfa link
+     3)Click Leads button
+     4)Click CreateLead link
+     5)Enter companyName as TestLeaf
+     6)Enter Firstname
+     7)Enter lastname
+     8)Click Car and Driver in Market Campaign DD using selectByIndex()
+     9)Click Insurance in Industry DD using selectByValue()
+     10)Click American Dollar in Currency DD using selectByText()
+     8)Click CreateLead button
+     
+   How to handle dropdown:
+   ======================
+     1)Right Click ->Inspect the dropdown-
+     2)Find whether that elment is inside a select tag  
+     3)Create an object for Select Class and pass the WebElement inside the Constructor
+     4)Using the object of the Select Class->Use any of these three methods 
+         -selectByIndex()
+         -selectByValue()
+         -selectByVisibleText()
+
+     Waits:
+     =====
+       ImplicitlyWait()
+          -Selenium Wait
+          -is applicable for all the findElement() and findElements() in a class
+          -Syntax
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+
+            30->
+            5th second ->if the element is available->it will not wait for another 25s->it will proceed to search
+            for the next element in the Dom
+       Thread.sleep()
+          -Java Wait    
+          -It is applicable only for that particular line
+          -Thread.slee(3000);
+             It will for entire for the whole duration
+
+         Xpath:
+         ======
+            It is used to locate the elements if the other locators are not present/same/different 
+            Index starts with 1
+
+           -Absolute Xpath:
+           ================
+              -Starts with root tag
+              -Long path
+              -Starts with '/'
+              -traverse through each and every tag in th Hierarchy to search for the required elements
+                 ex:/html/body/div[2]/div/div/form/p/input
+               -Rarely used because of unreliable
+
+           -Relative Xpath:
+           =================    
+                -Starts with "//"   
+            
+
+            Attribute Based Xpath:
+            =====================
+              Syntax:
+                //tagName[@Attributename='attributevalue']
+            Ex: //input[@id='username']
+                //input[@id='password']
+                //input[@class='decorativeSubmit']
+
+            TextBased Xpath:
+            ================
+               Syntax:
+                  //tagName[text()='textValue(BlackColortext)']  
+
+            Partial Based Xpath:
+            ===================
+               Syntax:
+                //tagName[contains(text(),'value')]
+              Ex://a[contains(text(),'CRM')]  
+                //tagName[contains(@attribute,'value')]
+              Ex://input[contains(@class,'decorative')]  
+                
