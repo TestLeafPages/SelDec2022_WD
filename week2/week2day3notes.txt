@@ -1,0 +1,132 @@
+Todays Agenda:
+=============
+   9:30-10:00-Recap
+   10:00-10:30-Advanced Xpath
+   10:30-11:00-Classroom
+   11:00-12:00-Advanced Xpath
+   12:00-12:15-Classroom
+   12:15-12:30-MultipleOptions
+   12:30-12:40-Classroom 
+
+
+   -Relative Xpath:
+           =================    
+                -Starts with "//"   
+            
+
+            1)Attribute Based Xpath:
+            =====================
+              Syntax:
+                //tagName[@Attributename='attributevalue']
+            Ex: //input[@id='username']
+                //input[@id='password']
+                //input[@class='decorativeSubmit']
+
+            2)TextBased Xpath:
+            ================
+               Syntax:
+                  //tagName[text()='textValue(BlackColortext)']  
+
+            3)Partial Based Xpath:
+            ===================
+               Syntax:
+                //tagName[contains(text(),'value')]
+              Ex://a[contains(text(),'CRM')]  
+                //tagName[contains(@attribute,'value')]
+              Ex://input[contains(@class,'decorative')]  
+                
+            4)Index based Xpath:
+            ====================    
+               (//input[@class='inputLogin'])[2]
+                (//span[text()='Home'])[3]
+
+
+            Classroom:
+            ==========
+              https://www.zoomcar.com/in/chennai    
+              Write xpath for AirportRoundTrip
+              Write xpath for PickUpCity
+              Write Xpath for FindCars
+            
+            Exception:
+            =========
+               InvalidSelectorException
+                -If the XPath syntax is wrong
+
+      Axes Based Xpath/RelationShip based Xpath:
+      ===========================================
+
+          Leaftaps:
+          ========
+             <form>->GrandParent
+               <p>-Parent
+                <label>-Child   Siblings     
+                <input>-Child   Siblings
+               <p>                              Cousins
+                <label>-Child   Siblings    
+                <input>-Child   Siblings 
+              <p>
+                <input>
+              </p>  
+            </form>
+
+          1)Parent to Child
+            Find the parent using relative xpath
+            Syntax:
+               parent_Xpath/child tagName
+               Ex:(//div[@class='x-grid3-cell-inner x-grid3-col-partyId']/a)[1]
+
+          2)Child to Parent
+             Find the child using relative xpath
+             Syntax:
+              child_Xpath/..
+            EX://input[@id='password']/..
+              child_Xpath/parent::parent_tagname
+            Ex://input[@id='password']/parent::p 
+
+          3)GrandParent to GrandChild
+           Find the grand_parent using relative Xpath
+           Syntax:
+            grand_Parentxpath//grandchild tagname
+          Ex:(//form[@id='login']//input)[3]  
+
+          4)GrandChild to GrandParent
+          Find the grand_child using relative Xpath
+           Syntax:
+            grand_child_xpath/ancestor::ancestor_tagName
+
+
+          5)Find by Elder-Sibling
+           Find the younger using relative xpath
+           Syntax:
+             //ElderXpath/following-sibling::youngerTagname
+             //label[text()='Password']/following-sibling::input
+
+          6)Find by Younger-Sibling
+          Find the elder using relative xpath
+          Syntax:
+            younger xpath/preceding-sibling::elder tagname
+          //input[@class='inputLogin']/preceding-sibling::label
+
+          7)Find by Younger-Cousin
+           Find the younger  using relative xpath
+           youngerXpath/preceding::eldertagname
+           //input[@class='decorativeSubmit']/preceding::label
+
+          8)Find by Elder-Cousin
+          Find the elder  using relative xpath
+          elderxpath/following::youngertagname
+          (//label[text()='Username']/following::input)[2]
+          
+
+          Ruto xpath finder:
+          =================
+            
+
+          Classroom:
+          =========
+            1)Go to salesforce application(https://login.salesforce.com/?locale=in)
+               username:hari.radhakrishnan@qeagle.com
+               password:Testleaf$3212
+            2)Write Axes based xpath for toggle button
+            3)Write Axes based xpath for view All
