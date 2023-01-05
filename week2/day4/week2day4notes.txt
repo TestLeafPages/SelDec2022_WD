@@ -1,0 +1,67 @@
+Todays Agenda:
+=============
+  9:15-9:45->Recap,multiple Options
+  10:00-10:30->Classroom
+  10:30-11:30->Java OOPs-Inheritance
+  11:30-12:00->Classroom
+  12:00-12:30->RealTime Example
+
+
+  Classroom:
+  ==========
+    Load (https://www.leafground.com/select.xhtml)
+    In the dropdown
+     Select PlayWright and Cypress
+     Get the text
+     Run and confirm
+
+     OOPs:
+     =====
+       Object Oriented Programmin language 
+       based on the concept of objects
+       It can contains data-methods,variables/logic
+
+     4 concepts in OOPs  :
+     ====================
+       -Inheritance
+       -Polymorphism
+       -Abstraction
+       -Encapsulation
+
+     Major Benefits:
+     ==============
+       ->Reusability
+       ->Flexibility
+       ->Efficient  
+
+      Inheritance:
+      =============
+         -One of the most commonly used OOPs concept
+         -It is the concept of building relationship between 2 similar classes(parent-child)
+         -To have the common functions 
+         -To avoid dupliacte implementation
+         -To reduce the code
+
+       Types of Inheritance:
+       ====================
+          -Single (parent-child)
+          -Multilevel(GrandParent-Parent-Child)
+          -Multiple
+          -Hierarchy
+
+         Single Inheritance:
+         ==================
+            Parent-Child
+            extends Keyword
+
+         Classroom:
+         ==========
+           1)Create a class called Vehicle(2 methods)
+               -Truck(one method)
+                 -AshokLeyland(2 methods)
+
+               -Jeep (one method)
+                 -Mahindra (one method)
+           2)Create an Execution Class(MyVehicle)
+           3)Create an object for AshokLeyland and call all the methods  
+           4)Create an object for Mahindra and call all the methods  
