@@ -1,0 +1,80 @@
+Todays Agenda:
+=============
+   1)9:30-10:30-Arrays
+   2)10:30-11:00-Classroom
+   3)11:00-12:00-String
+   4)12:00-12:15->Classroom
+   5)12:15-12:30->Problem
+   5)12:30-12:40->Recap       
+
+   Arrays:
+   ======
+     It is the fundamental structure
+     int num=10;
+     int[] nums= {10,20,30,40};
+   String name="Subraja";
+   String[] names = {"Subraja","Ranjini"};
+     when you want to multiple datas together with similar data types then you can declare an Array.
+
+     int[] marks = new int[5];
+
+     It is based on index
+
+     In array length is a property(variable)
+     
+
+Limitation:
+==========
+   -The array size should be fixed
+   -It cannot be incremented/decremented
+
+Classroom:
+============
+  Find the minimum and maximum value of the array
+    int[] nums={45,567,67,8787,5657,23,19};
+    Hints:
+     Sort the array
+     find the minimum value using index
+     find the maximum value
+     find the second largest number of this array
+String:
+======
+ It is a non primitive DataType
+ It is a class
+ String is a sequence of characters
+
+ Two ways to declare String:
+===========================
+   String literal
+     -String Constant pool
+     -to use the memory space effectively
+   String Object
+     -Heap memory
+     -will always create a new memory space
+
+ Methods of String:
+ =================
+    length()-is a method to find the number of characters in a String    
+    charAt()-to retrieve a particular character in the given position
+    tocharArray()-To convert String to a character array
+    equals()-To compare two string values
+    equalsIgnoreCase()-To ignore Case sensitivity
+    indexOf()-to find the index position of the given character
+    contains()-to check for the partial match
+    substring()-to return a string that is a substring of this string
+
+Classroom:
+==========
+   Find the char Occurence
+   String str = "Testleaf"    
+   Output=2
+   Hints:
+   Convert String to charArray
+   Iterate through a for loop
+   Check for the condition
+   print the Occurence
+
+
+
+
+      
