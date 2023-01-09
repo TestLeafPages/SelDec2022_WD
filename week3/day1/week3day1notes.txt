@@ -1,0 +1,119 @@
+Todays Agenda:
+=============
+  9:30-10:30->Polymorphism
+  10:30-11:00->Classroom
+  11:00-12:00->Abstraction
+  12:00-12:15->Classroom
+  12:15-12:30->Collection-Intro
+  
+  Polymorphism:
+  =============
+     Polymorphism refers to the ability of a class to provide different implementations of a method
+     Java allows us to perform the same action in many forms
+    
+    Types of Polymorphism:
+    =====================
+      -OverLoading
+      -Overriding
+
+      OverLoading:
+      ===========
+        -Compile-Time Polymorphism
+        -When 2 or methods inside the same class
+        -Have same signature except the input argument
+        -Benefits:
+          -Simplicity
+          -Verbose
+
+        Real Time Example for overloading:
+        =================================
+           -println(int x)
+           -println(String x)
+           -println(float x)  
+           -substring()
+           -contentEquals()
+           -lastIndexOf()
+           -List-add()
+
+     Overriding:
+     ===========
+       -Run-Time Polymorphism
+       -When 2 or more methods are within different classes
+       -but inherited between them(extends)
+       -signature same
+       -logic is different  
+
+
+       -sub class method overrides(cahnge the logic) that is inherited from the parent class
+
+       Real Time Example for Overriding:
+       =================================
+          quit()
+          ChromiumDriver-RemoteWebDriver
+          
+       super keyword:
+       =============
+         -It is to call the parent class method
+         -It is possible only if it is inherited
+
+
+         Classroom:
+         ==========
+           -Create a class called Calculator
+           -Create 3 methods 
+               -sub()
+               -sub()-two different arguments
+               -sub()-two different arguments with different datatype
+            -Create a main method
+            -Call -sub()-two different arguments with different datatype
+            -Run and confirm  
+
+Abstraction:
+
+ -Display only the relevant information to end user and hide irrelevant features,which can be a distraction
+
+   -Interface
+   -Abstract Classroom
+   -Concrete Class
+
+Interface
+
+ -Design document/Blue print   
+ -Architect will design the plan
+ -Implement to make it work
+ -keyword:implements
+ -100% Abstract
+ -Cannot create object for an Interface(cannot instantiate the interface)
+ -Best practice to have clean design and code principles
+
+ Selenium Example:
+    WebDriver,SearchContext,Alert,WebElement
+    WebElement extends SearchContext, TakesScreenshot
+ Java Example:
+    List,Set,Map
+
+Abstract Class:
+   -It is not fully ready
+     it can have both implemented + Abstract
+   -It is not mandatory to implement all the methods from an Interface
+   -keyword:abstract
+   -We can have our own abstract method
+   -Cannot create object for an Interface(cannot instantiate the interface)
+      -because it can have both implemented and unimplemented methods
+
+Concrete Class:
+
+   For execution 
+
+
+
+
+   Classroom:
+   ========
+     Create an interface Mobile
+     write 3 methods -sendSms
+     dialNumber
+     switchOn
+
+     create a concrete class
+    Create an object and call all the methods 
