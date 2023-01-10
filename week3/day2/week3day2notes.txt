@@ -1,0 +1,81 @@
+Todays Agenda:
+=============
+   9:30-10:30->Collection-List,findElements()
+   10:30-11:00->Classroom
+   11:00-12:00->Set
+   12:00-12:30->Classroom
+
+    Array
+     -static Array
+     -int[] nums={};
+     -Size is fixed
+     -Can hold primitive datatype
+
+     Collection
+
+     -Dynamic Array
+     -Automatically Inc/Dec
+     -Size can grow/shrink
+     -Wrapper classes
+          
+   List
+
+     -Interface
+     -It can hold duplicate data
+     -Order : FIFO
+     -Based on index
+
+   Implementation 
+     
+      -ArrayList
+      -LinkedList
+
+   Methods of List:
+
+     1)size()          ->Number of items in a List
+     2)add()           ->Element will get added to last index+1
+     3)remove()        ->Remove a particular element from a List
+     4)get(int index)  ->retrieve a element from a list in the given index
+     5)clear           ->remove all elements from a list
+
+     findElements()
+
+Classroom:
+=========
+      Load amazon.in
+      Search for mobiles in the search box
+      Print all the prices of the mobiles
+      Convert String to Integer(Integer.parseInt())
+      Add the convert int values in a list
+      Print the leat value of the list
+      Find whether there are duplicate values in the list(using if condition)
+      Remove Duplicate value from the list using Set
+
+
+
+Set:
+
+  -Interface
+  -It cannot hold any duplicate data/Only unique data   
+
+Implementation
+  
+   -HashSet        -Based on the random Order
+   -TreeSet        -Based on the ASCII order(alphabetic order)
+   -LinkedHashSet  -Based on the Insertion order
+
+Methods of Set:
+=============
+     1)size()          ->Number of items in a Set
+     2)add()           ->Element will get added to particular index based on the implementation class
+     3)remove()        ->Remove a particular element from a Set
+   
+     5)clear           ->remove all elements from a Set
+
+   x)get(int index)  ->This method not available
+
+   Classroom:
+   =========
+   Print only the unique characters in the given string
+   String companyName="google";
+   Output=gole
