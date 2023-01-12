@@ -1,0 +1,98 @@
+Todays Agenda:
+
+ 9:30-11:00->Target Locators-ALert,Frame
+ 11:00-11:30->Classroom
+ 11:30-12:20->Window Handles
+ 12:20-12:30->Recap
+ALert:
+
+  -Interface
+  -modal dialg box
+  -Alert is not inspectable why because it is a javascript code(Script tag)
+
+
+How can we achieve this?
+    -Right click and inspect on the Alert
+    -If it is not inspectable
+    -Selenium WebDriver cannot directly interact with the Alert
+    -switch the control to the Alert
+
+Types Of Alert:
+
+   -Simple Alert(only one option-Positive Appproach)   
+       -getText()
+       -accept()
+   -Confirm Alert(2 options-Accept/dismiss)
+       -getText()
+       -accept()
+       -dismiss()
+   -Prompt Alert
+       -getText()
+       -sendKeys()
+       -accept()
+       -dismiss()
+
+
+Methods:
+
+    -accept()
+    -dismiss()
+    -getText()
+    -sendkeys()  
+
+ 
+ Exception:
+   -NoAlertPresentException
+      If we try to interact with the alert which is not available
+   -UnhandledAlertException   
+      If there is an alert popping up and if it is not handled
+
+ 
+ Non-modal dialog box-Sweet Alert
+   It is inspectable
+   Right Click and inspect in the alert box
+   Find the element and locate it
+Frame:
+  
+  What?
+    DOM inside a DOM
+
+  Why?
+    -NoSuchElementException
+
+  How?
+    -Right Click and inspect
+      options like view frame source,Reload frame 
+    -switch the control to the Frame
+    switchto().frame()
+
+  Methods:
+   -Best example for OverLoading in Selenium
+   -frame(by index)
+   -frame(String name or id)
+   -frame(WebElement)
+
+   defaultContent()
+    -to come out of all the frames
+    -switch the control back to the main window
+
+  ParentFrame-frame1
+  nestedframe-frame2
+  nestedframe-frame3 
+
+  driver.switchto().parentFrame();   
+
+ Disable Browser notification:
+
+  ChromeOptions options = new ChromeOptions();
+  options.addArguments("--disable-notifications");  
+
+  ElementInterceptedException 
+
+
+  Classroom:
+
+  Load this url(https://www.w3schools.com/js/tryit.asp?filename=tryjs_confirm)
+  click Try it button
+  Accept the alert
+  get the text and verify

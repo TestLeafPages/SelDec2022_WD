@@ -1,0 +1,43 @@
+Todays Agenda:
+
+    9:30-10:30->Map
+    10:30-11:00->Classroom
+    11:00-12:00->TargetLocators-ALert
+    12:00-12:20->Classroom
+    12:20-12:30->Recap
+    
+
+Map:
+ 
+  -Interface
+  -Key:Value pair
+  -Key is always unique
+  -Value can be duplicate
+  -Key+Value->Entry
+
+Implementation
+
+   -HashMap         -Based on a random order
+   -TreeMap         -Based on ASCII order(alphabetic order)
+   -LinkedHashMap   -Based on the Insertion Order
+
+Methods Of Map:
+
+1)size()         ->Number of entries/key inside a Map
+2)put(key,value) ->Add the elements inside the map(implementation class)
+3)remove(key)    ->Remove particular entry by key
+4)clear()        ->Remove all the entries
+5)contains(key)  ->return boolean 
+6)contains(value)->return boolean
+7)get(key)       ->Returns the value by key
+
+Entry
+
+1)getKey
+2)getValue
+
+Classroom:
+=========
+  int[] nums = {1,2,3,2,1,5,6,2};
+  Find the occurence of each numbers
+  Find the single occuring number
