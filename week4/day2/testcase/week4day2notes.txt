@@ -1,0 +1,93 @@
+Today's Agenda:
+
+   9:30-9:45->TestNG Introduction
+   9:45-11:00->Sequential,Parallel Execution
+   11:00-11:30->Classroom
+   11:30-12:15->WebTable
+   12:15-12:30->Classroom
+Limitations:
+ 
+ 1)One by One(50 automated testcases)
+   -Time Consuming
+   -Manually someone have to be present
+   -Same Data
+   
+  Expectation:
+    
+    -Run automatedly-Parallel
+
+2)Run for hardcoded Data 
+    Expectation:Run for Different data   
+
+3)There is no reporting
+    Expectation:Atleast basic report(how many passed,failed,skipped)
+
+4)There is no way to rerun the test on failure
+    Expectation:automated retry
+
+5)There  is no way to filter the tests to Run
+    Expectation:Automated grouping would be nice
+
+
+TestNG
+   
+   -Test Execution FrameWork
+   -Full of configuration
+
+   Cedric Beust
+
+2-Step Process
+   
+   -TestNG as Plugin(To run as testng xml file)
+   -TestNG as Jar(to understand the software)
+
+Steps to Convert a normal testcase to testNg:
+
+  1)Convert main method to normal method
+    -Remove static
+    -Remove arguments
+    -Give a meaningful name to the method
+  2)Add @Test annotation on top of the method  
+  3)Right Click Run as->TestNG
+
+
+  How to generate XMl file:
+
+    -Select all the testcases to run
+    -Right click-TestNG-Convert to TestNG
+    -Xml structure will open
+    -Click Finish
+    -testng xml file will be generated at the bottom of your project
+    -Open xml file
+      -Make sure to click source tab
+
+ XMl structure:
+
+    Suite: All testcases together in a xml
+    Test: Map it with a module of your app     
+WEbTable:
+
+   (//span[text()='Customer Analytics Table']/following::table)[2]-identify table
+   (//span[text()='Customer Analytics Table']/following::table)[2]//th-identify number of columns
+   (//span[text()='Customer Analytics Table']/following::table)[2]//tbody/tr-identify the number of rows
+
+   <table>
+   <tbody>
+   <thead>
+   <tr>
+   <td></td>
+   <td></td>
+   <td></td>
+   </tr>
+   </thead>
+   </tbody>
+   </table>
+   
+   Classroom:
+   Load the url(https://erail.in/)
+   Uncheck sort on date
+   Type Ms and press Enter(Clear)
+   Type Cape and press Enter(Clear)
+   Print all the trainnames 
+
+   //table[@class='DataTable TrainList TrainListHeader stickyTrainListHeader']//tr/td[2]
