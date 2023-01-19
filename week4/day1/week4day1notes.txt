@@ -1,0 +1,75 @@
+Today's Agenda:
+  
+    9:30-10:30-Window handling
+    10:30-11:00-Classroom
+    11:00-12:15-Actions
+    12:15-12:30-Classroom  
+
+  Window:
+   -Window/Tab is technically same
+   -Window/Tab->URL/browser controls
+   -So,how to find the window uniquely?
+
+  CDwindow-0916D0DD5072458B13EFE0548FE2CF07
+
+  CDwindow-CB11A857A2B7FAA02369F16A7788DDA9
+Window
+CDwindow-CB11A857A2B7FAA02369F16A7788DDA9
+
+Exception:
+  NoSuchWindowException
+    The window you are trying to talk is not existing
+
+Classroom:
+1)Open Chrome
+2)Login to leaftaps
+3)Click CRM/SFa link
+4)Click Leads link
+5)Click Merge Leads
+6)Click the icon 
+7)Switch to the new Window
+8)Enter the firstname as Subraja
+9)Click FindLeads Button
+10)Click on the first resulting leadid
+11)Move the Control back to the first window
+12)Get the title
+Advanced User Interactions:
+=========================
+    -mouse actions
+
+    mouse hover
+    drag and drop
+    click and hold
+    scrolldown
+
+    Actions Class
+     1)moveToElement()-mousehover
+     2)draganddrop()->source,destination
+     3)draganddropBy()-> ele x,y
+     4)contextClick()->rightClick
+     5)doubleClick()->doubleClick
+     6)scrollToElement()->scrolldown
+     7)clickandHold()
+
+
+WebTable:
+========
+    <table>
+    <tbody>
+    <th>/<thead>-table header
+    <tr>-table row
+       <td>-table data
+       <td>
+       <td>
+     </tr>
+     <tr>-table row
+       <td>-table data
+       <td>
+       <td>
+     </tr>
+     </th>
+     </tboby>
+     </table>
+
+      
+      If you want to find the number of columns in a table then you can search by the tagname th
