@@ -1,0 +1,10 @@
+Today's Agenda:
+
+   9:30-10:00-Constructor
+   10:00-10:15-Classroom
+   10:15-11:00-Static,this
+   11:00-11:15-Classroom
+   11:15-11:45-TestNg Assertion
+   11:45-12:30-TestNg listeners
+
+   
