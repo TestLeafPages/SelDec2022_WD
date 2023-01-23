@@ -1,0 +1,95 @@
+Today's Agenda:
+
+  
+  9:30-10:30-Annotations
+  10:30-11:00-Classroom
+  11:00-12:15-Attributes
+  12:15-12:30-Classroom
+
+
+Annotations Hierarchy:
+
+@BeforeSuite
+
+          @BeforeTest
+
+                     @BeforeClass
+
+                           @BeforeMethod
+
+                                       @Test(Mandatory)
+
+                            @AfterMethod       
+
+                    @AfterClass
+
+          @AfterTest
+
+@AfterSuite                    
+
+Steps
+
+   Create a BaseClass
+   Create two methods
+    -preCondition-annotate with @BeforeMethod
+    -postCondition-annotate with @AfterMethod
+   Make sure to cut all the common steps from each of your testcase
+   and all the child class should extend BaseClass
+
+To see the basic html report
+  -Run your testcase
+  -Right click and refresh your project
+  -Open test-output folder
+  -Right click index.html ->open with system editor
+Attributes:
+
+ invocationCount
+   -The number of times this method should run
+   -Default value 1
+
+ timeOut
+    -The maximum number of milliseconds this test should take.Otherwise mark test as failed
+    -Use it when:When you like to benchmark the performance of the test steps
+
+ invocationTimeOut
+       -The maximum number of milliseconds this test should take for the cumulated time of all the 
+    invocationCounts.
+       -This attribute will be ignored if invocationCount is not specified
+    Recommended not to use    
+
+  priority
+      -Lower priorities will be scheduled first
+      -Useful for a developer
+
+  dependsOnMethods
+
+     There are two kinds of dependencies:
+      Hard dependencies. 
+        All the methods you depend on must have run and succeeded for you to run. 
+        If at least one failure occurred in your dependencies, you will not be invoked and marked as a SKIP in the report.
+     Soft dependencies.
+        You will always be run after the methods you depend on, even if some of them have failed.
+        This is useful when you just want to make sure that your test methods are run in a certain order but their success doesn't really depend on the success of others. A soft dependency is obtained by adding "alwaysRun=true" in your @Test annotation.
+
+     -When the parent testcase is failing the child testcase will be skipped
+    pass
+    fail
+    skip  
+          
+enabled 
+
+
+groups
+
+    Ramya-500 -Create,Edit
+    Jayanthi-300 -Merge
+    Krishnan-200
+    Nilesh-100 -Delete
+    Priya-50 -Duplicate
+
+  Classroom:
+
+       
+
+
+        
