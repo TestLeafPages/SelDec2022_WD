@@ -1,0 +1,119 @@
+Today's Agenda:
+
+    9:30-10:00->Cucumber Introduction
+    10:00-10:30->How to create Feature file
+    10:30-11:00->Classroom
+    11:00-11:30->StepDefinition,Runner
+    11:30-12:00->Shadow Dom,JavaScript click
+    12:00-12:30->TestNG Listeners
+Cucumber:
+
+Test Driven Development-TDD:
+    -Write the testcases first
+    -Review and approve the testcases by the project team
+    -Approved testcases will drive the Development
+
+ATDD-Acceptance Test Driven Driven Development
+
+   -Write the User Acceptance Testcases first
+   -Review and approve the testcases by the project team
+   -Approved testcases will drive the Development
+
+Behaviour Driven Development-BDD:
+
+  -BDD Automation tool
+  -To solve the communication gap between the non tech team(business analyst) and the technical team(Dev&Testers)
+  -Test scenarios will be captured as behaviours using common language which is understandable by tech and
+   non tech team
+  -Approved testcases will drive the development 
+
+ Gherkin keywords:
+
+  Feature: used to describe the fuctionality
+  Scenario: used to describe a testcase
+  Given: Used to precondition
+  When: Used to represent the test step / condition
+  Then: Used to represent the expected result for positive scenario
+  But: Used to represent the expected result for negative scenario
+  And: Used as a conjuction when we have BDD keywords repeating consequtively
+  Background: common pre conditions
+  Scenario Outline and Examples: To pass multiple data
+
+Layers of Cucumber:
+  3 Layers
+   -Features
+   -Step StepDefinition
+   -Runner 
+Steps to Create Feature file
+  
+  1)Under src/test/java Create 3 packages
+     - features
+        -Right click ->New->Other->File->Next->Login.feature->Finish
+       Feature:
+          Start with uppercase
+          End with semicolon
+          white space after colon
+       Scenario:
+         Open the Chrome Browser
+         Load the application url
+         Enter the username as Demosalesmanager
+         Enter the password as crmsfa
+         Click on login button
+         HomePage should be displayed
+
+     - steps
+     - runner
+
+Classroom:
+ 
+ -Create features,steps,runner package
+ -Create a feature file for Login
+ -Write BDD steps for Login with psoitive credential
+
+Exception:
+   -UndefinedStepException
+     If a step is not defined in the step defintion  for feature file  
+   -DuplicateStepDefinitionException
+     If same code is repeating in the StepDefinition  
+
+
+Steps to implement Step Definition and Runner
+  Create a class StepDefinition
+    -Create 6 methods for each BDD keywords inside Scenario
+    -Write Java code inside each method
+    -Annotate each method with cucumber annotation 
+    -Integrate feature step with Step Definition
+ Create a class CucumberRunner
+   -CucumberRunner should extends AbstractTestNGCucumberTests
+   -On the top of the class
+     @CucumberOptions(features="",glue="",monochrome=true,publish=true)
+
+Retry Failed Testcases programatically:
+======================================
+IRetryAnalyzer-Interface
+  -Retry
+SelfClass implements IRetryAnalyzer
+IAnnotationTransformer  
+
+
+test-output folder->execute testng-failed.xml
+
+Steps to handle  shadow Dom:
+  1)Find the element and put in the Dom
+  2)Check whether it is getting highlighted
+  3)If it is not highlighting
+    -use sukgu dependency
+      <dependency>
+    <groupId>io.github.sukgu</groupId>
+    <artifactId>automation</artifactId>
+    <version>0.1.4</version>
+</dependency>
+4)Create an object for Shadow class
+5)Using shadow object use findElementByXpath and click
+
+
+ -JavaScriptException
+ -ELementNotInteractableException
+
+ JavaScript click
+ driver.executeScript("arguments[0].click();", ele);
