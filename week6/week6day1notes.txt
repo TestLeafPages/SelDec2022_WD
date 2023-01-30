@@ -1,0 +1,73 @@
+Today's Agenda:
+  
+  9:30-10:30-Hooks Implementation
+  10:30-11:00-Classroom
+  11:00-12:00-Parameterization
+  12:00-12:10-Classroom
+  12:10-12:30-tags
+
+  How to parameterize :
+  1)In scenario surround the data with single quote 'Demosalesmanager'
+  2)In stepDefinition replace the hardcoded data with {string}
+  3)For methos pass the data as arguments
+  4)Replace the hardcoded data in sendkeys with the input arguments
+
+How to pass multiple data:
+  In scenario Outline 
+   -Replace the data with <companyname>
+   -In Examples
+      Create a pipeline symbol
+      First row will be header
+      Second row will be values
+In stepDefinition
+   -Create methods for the BDD keywords in feature file
+     -To parameterize 
+       Replace the data with (.*)$
+       In method send the data with input arguments
+       Replace the hardcoded data with the input arguments
+
+Classroom:
+   Create CreateLead feature file and write BDD steps
+   Create another CreateLeadSteps class in steps package   
+   Integrate the feature file and the stepDefintion 
+   Create a BaseClass
+     -Declare driver globally as staic variable
+   Create another HooksImplementation class 
+     -Create two methods and annotate it with @Before and @After
+   Run from the   runner class
+
+
+Note:
+ All StepDefinitionshould extend BaseClass
+ HooksImplementation should extend BaseClass
+  
+
+
+Hooks Implementation:
+====================
+  In Ruby language
+  Annotations-Hooks
+
+  @Before
+    -put the common preConditions
+  @After      
+    -put the common postConditions
+
+
+Using Hooks Implementation 
+  If StepDefinition is extending Hooks
+    InvalidMethodException
+
+
+HooksImplementation Class is not neccessary
+  In BaseClass
+   use TestNG annotations like @BeforeMethod and @AfterMethod
+   StepDefinition should extends BaseClass
+   Runner class should extends BaseClass
+BaseClass should extend AbstractTestNGCucumberTests
+
+Tags:
+ @Regression
+ @Smoke
+ @Sanity
+ @Functional
