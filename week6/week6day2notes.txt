@@ -1,0 +1,68 @@
+Today's Agenda:
+  
+  9:30-10:30-POM Introduction
+  10:30-11:00-Classroom
+  11:00:12:00-POM sequential execution
+  12:00-12:30-Constructor,Screenshot 
+pom.xml->Project Object Model
+
+Page Object Model:(POM)
+  -Design Pattern to build a framework
+
+FrameWork:
+  It is a real or conceptual structure to help the product development
+
+Advantages:
+  -Easy maintenance
+  -Increase Productivity
+  -Maintain Uniformity
+  -Reduce Duplicate code
+  -Support MultiLingual application
+  -Better reporting
+
+  pom.xml:
+  Selenium-java
+  TestNG
+  ApachePOI
+  commons-io
+  ExtentReport
+
+
+  Steps to create Page Object Model:
+  1)Create base package and create a class called BaseClass
+  2)Create pages package and Create Java Classes for each page
+     -LoginPage  - 3 actions
+     -WelcomePage - 2 actions
+     -MyHomePage - 1 action 
+     -MyLeadsPage - 3 actions
+     -CreateLeadPage - 4 actions
+     -ViewLeadPage - 1 action 
+  3)All the java Classes inside pages package should extend BaseClass
+  4)Inside each page/Java Classes
+     -Create methods for each action 
+     -Put the selenium codes inside each method respective to the action
+     -Add return statement depending upon the page navigation   
+  5)Create testcases package and create Java classes for each testcases
+  6)Each testcase should extend BaseClass
+  7)Inside each class create a method and annotate it with @Test   
+  8)In the BaseClass driver should be static
+
+Parallel Execution:
+ 1)Remove static declaration in the baseclass
+ 2)Create constructor for each class
+ 3)Inside the constructor arguments pass ChromeDriver driver
+ 4)Inside that initialize the driver value
+   this.driver=driver;
+ 5)In each constructor call pass the driver Object
+ 6)In the testcases also for each constructor call pass the driver
+
+
+ Constructor:
+    It is to initialize the state of an object
+
+Two types of Constructor:
+
+  -Default constructor
+
+  -Parameterized Constructor 
+  Constructor Overloading   
